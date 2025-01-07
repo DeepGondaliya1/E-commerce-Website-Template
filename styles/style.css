@@ -101,6 +101,18 @@ button{
     margin-left: 10px;
 }
 
+.home-background-star0{
+    position: absolute;
+    top: 54%;
+    left: 51%;
+}
+
+.home-background-star1{
+    position: absolute;
+    top: 30%;
+    left: 85%;
+}
+
 .home-background-image{
     width: 50%;
     position: relative;
