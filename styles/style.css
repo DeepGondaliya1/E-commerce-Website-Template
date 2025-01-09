@@ -1,16 +1,38 @@
 body{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+.width-class{
+    width: 100%;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.bg-color1{
+    background-color: black;
+}
+
+.bg-color2{
+    background-color: #F2F0F1;   
 }
 
 .header-content{
     background-color: black;
     color: white;
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
+    max-width: 1240px;
+    margin: 0 auto;
 }
+
+
 .header-subpart{
-    margin-right: 15px;
+    margin-right: 5px;
     margin-top: 15px;
 }
 
@@ -21,11 +43,12 @@ body{
 }
 
 .header-main{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
-    justify-content: left;
-    margin-left: 250px;
+    justify-content: space-between;
     padding: 15px;
+    /* max-width: 1240px; */
+    margin: 0 auto;
 }
 
 ul{
@@ -35,10 +58,6 @@ ul{
 }
 ul li{
     padding: 10px;
-}
-
-.header-title{
-    
 }
 
 .header-searchbar{
@@ -67,14 +86,15 @@ ul li{
 }
 
 .home-layout{
-    width: 100%;
+    background-image: url(/image/Rectangle\ 2.png);
     background-color: #F2F0F1;
     display: flex;
-    padding-bottom: 10px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .home-background-text{
-    margin-left: 200px;
+    margin-left: 50px;
     padding: 60px;
     width: 50%;
 }
@@ -97,7 +117,7 @@ button{
     height: 40px;
     color: white;
     font-size: 14px;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-left: 10px;
 }
 
@@ -114,20 +134,24 @@ button{
 }
 
 .home-background-image{
+    display: none;
     width: 50%;
     position: relative;
 }
 
 .header-number{
     display: flex;
+    margin-top: 65px;
     padding: 10px;
+    max-height: 74px;
 }
 
 
 .number-style{
-    margin-top: 20px;
-    padding: 18px;
-    border-right: 0.1px solid grey;
+    margin-top: -36px;
+    padding-right: 30px;
+    padding-left: 31px;
+    border-right: 0.1px solid #cfcdcd;
 }
 
 .num-style{
@@ -140,17 +164,26 @@ button{
 }
 
 
-.brand-layout{
+.brand-layout {
     background-color: black;
     display: flex;
-    justify-content: space-around;
-    padding: 30px;
-    width: 100%;
+    justify-content: space-evenly;
+    max-width: 1440px;
+    margin: 0 auto;
+    max-height: 122px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 
 .new-arrival{
-    margin: 50px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.extra-boder{
+    border-bottom: 1px solid #cfcdcd;
 }
 
 .new-arrival-top{
@@ -166,23 +199,51 @@ button{
     justify-content: space-around;
 }
 
+.rating-star {
+    display: flex;
+    align-items: center;
+}
+
+.rating-star div{
+    padding-left: 5px;
+}
+
+.price-flex{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 32px;
+}
+
+.price-flex div{
+}
+
+.price-style{
+    background-color: #f1b2b2;
+    color: red;
+    border: none;
+    width: 58px;
+    height: 28px;
+}
+
 .new-arrival-end{
     text-align: center;
 }
 .new-arrival-end button{
     color: black;
     background-color: white;
+    border-color: #cfcdcd;
     border-radius: 40px;
 }
 
-.templete{
+.templete {
     text-align: center;
+    max-width: 1239px;
+    margin: 0 auto;
 }
 
 .templete-style{
     background-color: #F0F0F0;
-    margin-left: 300px;
-    margin-right: 300px;
     border-radius: 50px;
     padding: 10px;
     padding-bottom: 70px;
@@ -199,9 +260,11 @@ button{
     width: 100%;
 }
 
+
 .review-section{
-    margin:90px;
-    padding : 20px;
+    max-width: 1249px;
+    margin: 0 auto;
+    padding: 50px;
 }
 
 .review-section-header{
@@ -242,17 +305,21 @@ button{
     color: grey;
 }
 
-.section-main{
-    position: absolute;
-    top: 430%;
-    margin-left: 200px;
-    margin-right: 200px;
+sup{
+    justify-content: center;
+}
+
+.section-main {
+    /* margin: -110px; */
+    position: relative;
+    max-width: 1240px;
+    margin: 0 auto;
+    justify-content: space-between;
     background-color: black;
     padding: 30px;
     border-radius: 20px;
     color: white;
     display: flex;
-    justify-content: space-around;
 }
 
 .section-main-left{
@@ -261,13 +328,11 @@ button{
 }
 
 .section-main-right{
-    
+    width: 40%;
 }
 
 .right-main0{
     margin: 10px;
-    height: 40%;
-    width: 140%;
     display: flex;
     text-align: center;
     background-color: white;
@@ -277,13 +342,11 @@ button{
 
 .right-main1{
     margin: 10px;
-    height: 40%;
     text-align: center;
     line-height:50px;
     background-color: white;
     color: black;
     border-radius: 30px;
-    width: 140%;
 }
 
 .right-main0 svg{
@@ -291,11 +354,16 @@ button{
     color: grey;
 }
 
-.footer-main{
+.bg-gray {
     background-color: #F0F0F0;
+}
+
+.footer-main{
     padding: 100px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
     border-bottom: 1px solid grey;
 }
 
@@ -319,7 +387,7 @@ button{
 }
 
 .footer-icons svg{
-   smargin: 7px;
+   margin: 7px;
    padding: 12px;
    border: 1px solid grey;
    background-color: white;
@@ -330,9 +398,74 @@ button{
     background-color: #F0F0F0;
 }
 
-.footer-bottom{
+.footer-bottom {
     padding-left: 40px;
     background-color: #F0F0F0;
     display: flex;
     justify-content: space-between;
+    max-width: 1599px;
+    margin: 0 auto;
 }
+
+/* @media (max-width: 1280px) {
+    .header-content {
+        width: 80rem;
+    }
+    .header-main{
+        width: 62rem;
+    }
+    .home-layout{
+        width: 80rem;
+    }
+    .brand-layout{
+        width: 76rem;
+    }
+    .new-arrival-medium{
+        width: 80rem;
+    }
+    section{
+        width: 80rem;
+        overflow: hidden;
+    }
+    .new-arrival-medium{
+        overflow: hidden;
+    }
+    .templete{
+        width: 80rem;
+    }
+    footer{
+        width: 80rem;
+    }
+    sup{
+        width: 80rem;
+    }
+}
+
+@media (max-width:768px) {
+    .header-content {
+        width: 48rem;
+    }
+    .header-main{
+        justify-content: space-around;
+    }
+    .header-main ul{
+        display:none;
+    }
+    .header-main .header-searchbar{
+        display: none;
+    }
+    .home-background-image{
+        display: block;
+    }
+    .home-layout{
+        width: 48rem;
+
+    }
+    .brand-layout{
+        width: 76rem;
+    }
+    .new-arrival-medium{
+        width: 80rem;
+    }
+    
+} */
