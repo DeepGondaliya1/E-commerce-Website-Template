@@ -310,7 +310,7 @@ sup{
 }
 
 .section-main {
-    /* margin: -110px; */
+    margin: -110px;
     position: relative;
     max-width: 1240px;
     margin: 0 auto;
@@ -320,6 +320,11 @@ sup{
     border-radius: 20px;
     color: white;
     display: flex;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -165%);
+    transform-origin: center;
 }
 
 .section-main-left{
